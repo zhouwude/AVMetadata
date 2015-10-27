@@ -5,7 +5,41 @@
 //  Created by 周武德 on 15/10/27.
 //  Copyright © 2015年 周武德. All rights reserved.
 //
+/**
+ 
+ ---- 常用数学公式 ----
 
+//指数运算 3^2 3^3
+NSLog(@"结果 %.f", pow(3,2));              //result 9
+NSLog(@"结果 %.f", pow(3,3));              //result 27
+
+//开平方运算
+NSLog(@"结果 %.f", sqrt(16));              //result 4
+NSLog(@"结果 %.f", sqrt(81));              //result 9
+
+//进一
+NSLog(@"结果 %.f", ceil(3.000000000001));  //result 4
+NSLog(@"结果 %.f", ceil(3.00));            //result 3
+
+//退一
+NSLog(@"结果 %.f", floor(3.000000000001)); //result 3
+NSLog(@"结果 %.f", floor(3.9999999));      //result 3
+
+//四舍五入
+NSLog(@"结果 %.f", round(3.5));            //result 4
+NSLog(@"结果 %.f", round(3.46));           //result 3
+NSLog(@"结果 %.f", round(-3.5));           //NB: this one returns -4
+
+//最小值
+NSLog(@"结果 %.f", fmin(5,10));            //result 5
+
+//最大值
+NSLog(@"结果 %.f", fmax(5,10));            //result 10
+
+//绝对值
+NSLog(@"结果 %.f", fabs(10));              //result 10
+NSLog(@"结果 %.f", fabs(-10));             //result 10
+ */
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 @interface ZWDXYMath : NSObject
