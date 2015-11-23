@@ -49,7 +49,7 @@
    // 使用UIBezierPath绘制矩形
     // 获取path
     UIBezierPath *cPath = [UIBezierPath bezierPathWithRect:CGRectMake(0, 0, 100, 100)];
-    
+
     //使用UIBezierPath绘制椭圆
     
     // 获取path
@@ -111,10 +111,14 @@
     
     // 创建一个CAShapeLayer并获取椭圆的path
     CAShapeLayer *layer = [CAShapeLayer layer];
+    layer.backgroundColor = [UIColor blackColor].CGColor;
+    layer.opacity = 0.3;
+    
     layer.path = iPath.CGPath;
     
     // 把这个CAShapeLayer添加为mask
     showView.layer.mask = layer;
+    [self.view addSubview:showView];
 }
 
 - (void)didReceiveMemoryWarning {
